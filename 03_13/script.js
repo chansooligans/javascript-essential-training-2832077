@@ -4,7 +4,9 @@
  */
 
 import Backpack from "./Backpack.js";
+import Book from "./Book.js";
 
+const newbook = new Book("Harry Potter", 480, "JK Rowling");
 const everydayPack = new Backpack(
   "Everyday Backpack",
   30,
@@ -15,6 +17,6 @@ const everydayPack = new Backpack(
   false,
   "December 5, 2018 15:00:00 PST"
 );
-
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
+console.log("New book is called", newbook.title);

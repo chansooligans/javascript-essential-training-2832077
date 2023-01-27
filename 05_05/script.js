@@ -51,3 +51,7 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+console.log(123);
+const check = document.querySelector(".packprop.backpack__volume");
+console.log(check.innerText);
