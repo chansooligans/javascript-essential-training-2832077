@@ -123,3 +123,28 @@ document.querySelector(".site-title").style;
 document.querySelector(".site-title").style.color = "rebeccapurple";
 document.querySelector(".site-title").style.backgroundColor = "pink";
 ```
+
+Appending / Prepending inside Object:
+
+```javascript
+const main = document.querySelector(".maincontent");
+const newArticle = document.createElement("article");
+main.append(newArticle);
+```
+
+## Variables and Data Types
+
+- `var`: 
+  - declares a function-scoped or globally-scoped variable 
+    - if used in a function, will still be globally scoped when function is invoked
+  - default type
+  - multi-line is okay: `var x = 4, y = 'blue'`
+  - `var x` to initialize an undefined variable
+- `let`:
+  - block-scoped local variable 
+    - if used global, then global block scope
+    - if used in function, then function block scope
+- `const`:
+  - block-scoped, much like variables declared using `let` keyword
+  - cannot be changed through reassignment, but can be redeclared
+- use `typeof` to check data types

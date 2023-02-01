@@ -3,15 +3,15 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
  */
 
-var color = "purple";
+let color = "purple";
 
 document.querySelector(".left").style.backgroundColor = color;
 document.querySelector(".left .color-value").innerHTML = color;
 
-color = "skyblue";
+var color = "skyblue";
 
 function headingColor() {
-  color = "blue";
+  let color = "blue";
   document.querySelector(".title").style.color = color;
 }
 
